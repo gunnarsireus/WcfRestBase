@@ -88,12 +88,7 @@
     <Compile Include="IService1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Service References\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Properties\PublishProfiles\IIS EmployeeService.pubxml" />
     <None Include="Properties\PublishProfiles\IISSimpleRESTService.pubxml" />
