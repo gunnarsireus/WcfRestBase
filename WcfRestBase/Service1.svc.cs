@@ -105,11 +105,11 @@ namespace WcfRestBase
                 cmd.Parameters.Add(parameterId);
                 SqlParameter parameterName = new SqlParameter();
                 parameterName.ParameterName = "@Name";
-                parameterName.Value = employee.Name;
+                parameterName.Value = employee.Name??"";
                 cmd.Parameters.Add(parameterName);
                 SqlParameter parameterGender = new SqlParameter();
                 parameterGender.ParameterName = "@Gender";
-                parameterGender.Value = employee.Gender;
+                parameterGender.Value = employee.Gender??"";
                 cmd.Parameters.Add(parameterGender);
                 SqlParameter parameterDateOfBirth = new SqlParameter();
                 parameterDateOfBirth.ParameterName = "@DateOfBirth";

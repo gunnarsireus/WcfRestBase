@@ -7,20 +7,17 @@ using System.Runtime.Serialization;
 
 namespace WcfRestBase
 {
-    [CollectionDataContract(Name = "employees", Namespace = "")]
-    public class Employees : List<Employee>
-    { }
 
-    [DataContract(Name = "Employee", Namespace = "")]
+    [DataContract]
     public class Employee
     {
-        [DataMember(Name = "Id")]
+        [DataMember]
         public int Id { get; set; }
-        [DataMember(Name = "Name")]
+        [DataMember]
         public string Name { get; set; }
-        [DataMember(Name = "Gender")]
+        [DataMember]
         public string Gender { get; set; }
-        [DataMember(Name = "DateOfBirth")]
+        [DataMember]
         public DateTime DateOfBirth { get; set; }
     }
 }
